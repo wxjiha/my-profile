@@ -4,79 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Nish Mandal">
+    <meta name="author" content="Wajiha Alam">
     <meta name="description" content="This is my profile page">
-    <link href="profileStyle.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>My Profile</title>
 
+    <!-- <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style> -->
 </head>
 
-<body>
-    <nav>
-        <a href="index.html">Go to profile</a>
-        <a href="projects.html">Go to projects</a>
-        <a href="https://www.linkedin.com/in/nish-mandal/" target="_blank">My LinkedIn</a>
+<body class="bg-secondary text-center">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="#about-me">About Me</a>
+            <a class="navbar-brand" href="#hobbies">Hobbies</a>
+            <a class="navbar-brand" href="#daily-tip">Daily Tip</a>
+            <a class="navbar-brand" href="#projects">Projects</a>
+        </div>
     </nav>
 
-    <header>
-        <img alt="my-picture" src="images/profilepic.jpg" width="200px">
-        <h1>Nish Mandal</h1>
-        <h2>My Profile</h2>
-        <p>An <em>awesome</em> and <strong>amazing</strong> website demonstration</p>
-    </header>
-    <div>
-        <h4>My Skills</h4>
-        <p>Agile, Scrum and similar methodologies</p>
-        <p>Java, C#, Python</p>
-    </div>
-    <div>
-        <h4>My Hobbies</h4>
-        <ul>
-            <li>French</li>
-            <li>Piano</li>
-            <li>Jogging</li>
-        </ul>
-    </div>
-    <div>
-        <h4>Goals</h4>
-        <ol>
-            <li>Become a great tester</li>
-            <li>Pass ISTQB</li>
-        </ol>
-    </div>
-    <div>
-        <h3>Search for news</h3>
-        <form action="https://www.bbc.co.uk/search">
-            <label for="mysearch">Search for:</label>
-            <input id="mysearch" name="q" type="text" value="Birmingham">
-            <input class="button" type="submit" value="Submit">
-        </form>
+    <div class="container mb-5">
+        <div class="card shadow mx-auto" style="max-width: 800px;">
+            <div class="card-body">
+                <h1 class="card-title mb-3 fs-1 fw-bold font-monospace">Welcome to My Profile!</h1>
+            </div>
+        </div>
     </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Agile Project</td>
-                <td>Did some stuff with user stories</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Safari Park Project</td>
-                <td>Demonstrated polymorphism</td>
-                <td>2024</td>
-            </tr>
-        </tbody>
-    </table>
-    <footer>
+    <div id="about-me" class="container mb-4">
+        <div class="card shadow mx-auto" style="max-width: 800px;">
+            <div class="card-body text-start">
+                <h2 class="card-title mb-3 fs-2 fw-semibold font-serif">About Me</h2>
+                <p class="font-sans-serif">Hey!  My names Wajiha and I’m a computer science grad who loves creating things with code. I’m really into building web apps and exploring how machine learning can solve interesting problems — lately I’ve been working on a project that detects fraudulent transactions.</p>
+                <p class="font-sans-serif">I’ve taught coding to others and worked in customer-facing roles, which taught me how to explain tricky concepts and stay calm when things break (because they always do). When I’m not debugging or chasing down a new idea, you’ll probably find me tinkering with side projects, watching tech videos, or trying to learn something completely random just for fun.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="hobbies" class="container mb-4">
+        <div class="card shadow mx-auto" style="max-width: 800px;">
+            <div class="card-body text-start">
+                <h3 class="card-title mb-3 fs-3 fw-semibold font-serif">Hobbies</h3>
+                <ul class="font-sans-serif">
+                    <li>Cooking</li>
+                    <li>Lego</li>
+                    <li>Crochet & Knitting</li>
+                    <li>Travelling</li>
+                    <li>Trying new Foods</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="daily-tip" class="container mb-4">
+        <div class="card shadow mx-auto" style="max-width: 800px;">
+            <div class="card-body text-start">
+                <h3 class="card-title mb-3 fs-3 fw-semibold font-serif">Daily Tip</h3>
+                <blockquote class="blockquote font-monospace">
+                    <p>"Debugging is like being the detective in a crime movie where you are also the murderer."</p>
+                    <footer class="blockquote-footer">Anonymous</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects" class="container mb-5">
+        <div class="card shadow mx-auto" style="max-width: 800px;">
+            <div class="card-body">
+                <h3 class="card-title mb-3 fs-3 fw-semibold font-serif">Projects</h3>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered font-sans-serif">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Project Name</th>
+                                <th>Description</th>
+                                <th>Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fraud Detection Application</td>
+                                <td>Using different machine learning models to recognise fraudulent transactions.</td>
+                                <td>2025</td>
+                            </tr>
+                            <tr>
+                                <td>Social Website</td>
+                                <td>Allowing different people to connect and communicate all over the world.</td>
+                                <td>2025</td>
+                            </tr>
+                            <tr>
+                                <td>Campus Application</td>
+                                <td>To help new students connect with each other and organise their timetables.</td>
+                                <td>2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3 font-monospace">
         <small>Copyright &#169; Sparta Global 2024 <cite>by A. Trainer</cite></small>
     </footer>
+
 </body>
 
 </html>
